@@ -10,8 +10,8 @@
 body {
   font-family: 'Montserrat', sans-serif;
   margin:0;
-  background: linear-gradient(135deg, #0f3d2e, #1b5e20, #2e7d32); /* ostaje ista */
-  color:#e0f2f1; /* svetlo-zelena za tekst */
+  background: linear-gradient(135deg, #0f3d2e, #1b5e20, #2e7d32);
+  color:#fff;
   display:flex;
   justify-content:center;
   align-items:flex-start;
@@ -23,8 +23,8 @@ body {
   width:100%;
 }
 .intro {
-  background: linear-gradient(90deg, #4caf50, #388e3c); /* zeleni gradient */
-  color: #e8f5e9; /* svetlo-zelena boja teksta */
+  background: linear-gradient(90deg, #00e676, #00c853);
+  color: #003300;
   padding: 20px;
   border-radius: 15px;
   text-align: center;
@@ -42,7 +42,7 @@ body {
   line-height: 1.5;
 }
 .app {
-  background: rgba(76, 175, 80, 0.15); /* svetlo-zeleni providni kontejner */
+  background: rgba(255,255,255,0.12);
   border-radius:12px;
   padding:15px;
   margin-bottom:15px;
@@ -56,7 +56,6 @@ body {
 }
 .app h3 {
   margin:5px 0;
-  color:#a5d6a7; /* svetlija zelena za naslov aplikacije */
 }
 .btn {
   display:block;
@@ -64,15 +63,15 @@ body {
   padding:10px 15px;
   border:none;
   border-radius:10px;
-  background:#66bb6a; /* zeleni ton dugmeta */
-  color:#1b5e20; /* tamno-zelena boja teksta */
+  background:#00e676;
+  color:#003300;
   font-weight:bold;
   cursor:pointer;
   text-decoration:none;
   transition: background 0.3s;
 }
 .btn:hover {
-  background:#43a047; /* tamniji zeleni ton pri hover */
+  background:#00c853;
 }
 .code {
   font-size:14px;
@@ -80,10 +79,9 @@ body {
   margin-top:5px;
   cursor:pointer;
   user-select: none;
-  color:#c8e6c9; /* svetlo-zelena za kod */
 }
 .code:hover {
-  color:#00e676; /* svetlo-zelena pri hover */
+  color:#00e676;
 }
 </style>
 </head>
@@ -102,14 +100,14 @@ body {
 
 <!-- Aplikacije -->
 <div class="app">
-<img src="images/balkanmedia.png" alt="Balkan Media">
+<img src="images/balkanmedia.png">
 <h3>Balkan Media</h3>
 <a href="https://www.megadisk.net/cloud11/index.php/s/KqBJaTyO0zJzWFD/download" class="btn">Preuzmi aplikaciju</a>
 <p class="code" onclick="copyCode('8342292')">Downloader kod: <b>8342292</b></p>
 </div>
 
 <div class="app">
-<img src="images/anesa.png" alt="Anesa">
+<img src="images/anesa.png">
 <h3>Anesa</h3>
 <a href="https://www.megadisk.net/cloud11/index.php/s/agGDWOJ3wjvZiIE/download" class="btn">Preuzmi aplikaciju</a>
 <p class="code" onclick="copyCode('7529911')">Downloader kod: <b>7529911</b></p>
