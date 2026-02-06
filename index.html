@@ -35,6 +35,14 @@ body {
   box-shadow: 0 4px 15px rgba(0,0,0,0.3);
 }
 
+/* Logo direktno iznad teksta u intro */
+.intro .logo {
+  width:100px;
+  height:100px;
+  margin-bottom:15px;
+  animation: blink 1s linear infinite;
+}
+
 .intro h1 {
   margin: 0 0 10px 0;
   font-size: 24px;
@@ -94,41 +102,34 @@ body {
   color:#00e676;
 }
 
-/* LOGO */
-.logo {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  width: 100px;
-  height: 100px;
-  z-index: 1000;
-  cursor: pointer;
-  animation: blink 5s infinite; /* Treptanje loga */
-}
-
-/* Animacija treptanja */
+/* Animacija treptanja loga */
 @keyframes blink {
   0%, 50%, 100% { opacity: 1; }
-  25%, 75% { opacity: 0; }
+  25%, 75% { opacity: 0.2; }
+}
+
+/* Responsive za mobilne uređaje */
+@media (max-width: 600px) {
+  .intro .logo {
+    width:60px;
+    height:60px;
+  }
 }
 </style>
 </head>
 
 <body>
 
-<!-- LOGO -->
-<img src="images/edfc160d-608b-42ec-b685-d1404131fbf4.png"
-     alt="Balkan Media Logo"
-     class="logo">
-
 <div class="container">
 
 <div class="intro">
+  <!-- Logo -->
+  <img src="images/edfc160d-608b-42ec-b685-d1404131fbf4.png" alt="Balkan Media Logo" class="logo">
+  
   <h1>Dobrodošli na Balkan Media</h1>
   <p>
     Ovde možete pronaći <b>ANDROID aplikacije</b>.<br>
-    Instalacija direktnim klikom ili kopiranje koda za
-    <b>DOWNLOADER aplikaciju</b>.
+    Instalacija direktnim klikom ili kopiranje koda za <b>DOWNLOADER aplikaciju</b>.
   </p>
 </div>
 
@@ -153,13 +154,6 @@ body {
   <h3>iris SMART</h3>
   <a href="https://www.megadisk.net/cloud11/index.php/s/RDi0Twnm2QKCqq6/download" class="btn">Preuzmi aplikaciju</a>
   <p class="code" onclick="copyCode('1912973')">Downloader kod: <b>1912973</b></p>
-</div>
-
-<div class="app">
-  <img src="images/smarttube.png">
-  <h3>Smart Tube</h3>
-  <a href="https://www.megadisk.net/cloud11/index.php/s/AMiZnC3UXSJX59g/download" class="btn">Preuzmi aplikaciju</a>
-  <p class="code" onclick="copyCode('5143591')">Downloader kod: <b>5143591</b></p>
 </div>
 
 <div class="app">
