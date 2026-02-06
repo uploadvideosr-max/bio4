@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Balkan Media – Downloader</title>
+
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
 
 <style>
@@ -18,10 +19,12 @@ body {
   min-height:100vh;
   padding:20px;
 }
+
 .container {
   max-width:500px;
   width:100%;
 }
+
 .intro {
   background: linear-gradient(90deg, #00e676, #00c853);
   color: #003300;
@@ -31,16 +34,19 @@ body {
   margin-bottom: 20px;
   box-shadow: 0 4px 15px rgba(0,0,0,0.3);
 }
+
 .intro h1 {
   margin: 0 0 10px 0;
   font-size: 24px;
   font-weight: 700;
 }
+
 .intro p {
   margin: 0;
   font-size: 16px;
   line-height: 1.5;
 }
+
 .app {
   background: rgba(255,255,255,0.12);
   border-radius:12px;
@@ -48,45 +54,73 @@ body {
   margin-bottom:15px;
   text-align:center;
 }
+
 .app img {
   width:80px;
   height:80px;
   object-fit:contain;
   margin-bottom:10px;
 }
+
 .app h3 {
   margin:5px 0;
 }
+
 .btn {
   display:block;
   margin:10px auto;
   padding:10px 15px;
-  border:none;
   border-radius:10px;
   background:#00e676;
   color:#003300;
   font-weight:bold;
-  cursor:pointer;
   text-decoration:none;
   transition: background 0.3s;
 }
+
 .btn:hover {
   background:#00c853;
 }
+
 .code {
   font-size:14px;
   opacity:0.9;
   margin-top:5px;
   cursor:pointer;
-  user-select: none;
+  user-select:none;
 }
+
 .code:hover {
   color:#00e676;
+}
+
+/* LOGO */
+.logo {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 100px;
+  height: 100px;
+  z-index: 1000;
+  cursor: pointer;
+  animation: blink 5s infinite; /* Treptanje loga */
+}
+
+/* Animacija treptanja */
+@keyframes blink {
+  0%, 50%, 100% { opacity: 1; }
+  25%, 75% { opacity: 0; }
 }
 </style>
 </head>
 
 <body>
+
+<!-- LOGO -->
+<img src="images/edfc160d-608b-42ec-b685-d1404131fbf4.png"
+     alt="Balkan Media Logo"
+     class="logo">
+
 <div class="container">
 
 <div class="intro">
@@ -98,58 +132,57 @@ body {
   </p>
 </div>
 
-<!-- Aplikacije -->
+<!-- APLIKACIJE -->
+
 <div class="app">
-<img src="images/Downloader.png">
-<h3>Downloader</h3>
-<a href="https://www.megadisk.net/cloud11/index.php/s/ui6vtlkRbimB6Ya/download" class="btn">Preuzmi aplikaciju</a>
-<p class="code" onclick="copyCode('148534')">Downloader kod: <b>148534</b></p>
+  <img src="images/Downloader.png">
+  <h3>Downloader</h3>
+  <a href="https://www.megadisk.net/cloud11/index.php/s/ui6vtlkRbimB6Ya/download" class="btn">Preuzmi aplikaciju</a>
+  <p class="code" onclick="copyCode('148534')">Downloader kod: <b>148534</b></p>
 </div>
 
 <div class="app">
-<img src="images/smarttube.png">
-<h3>Smart Tube</h3>
-<a href="https://www.megadisk.net/cloud11/index.php/s/AMiZnC3UXSJX59g/download" class="btn">Preuzmi aplikaciju</a>
-<p class="code" onclick="copyCode('5143591')">Downloader kod: <b>5143591</b></p>
+  <img src="images/smarttube.png">
+  <h3>Smart Tube</h3>
+  <a href="https://www.megadisk.net/cloud11/index.php/s/AMiZnC3UXSJX59g/download" class="btn">Preuzmi aplikaciju</a>
+  <p class="code" onclick="copyCode('5143591')">Downloader kod: <b>5143591</b></p>
 </div>
 
 <div class="app">
-<img src="images/iris SMART.png">
-<h3>iris SMART</h3>
-<a href="https://www.megadisk.net/cloud11/index.php/s/RDi0Twnm2QKCqq6/download" class="btn">Preuzmi aplikaciju</a>
-<p class="code" onclick="copyCode('1912973')">Downloader kod: <b>1912973</b></p>
+  <img src="images/iris SMART.png">
+  <h3>iris SMART</h3>
+  <a href="https://www.megadisk.net/cloud11/index.php/s/RDi0Twnm2QKCqq6/download" class="btn">Preuzmi aplikaciju</a>
+  <p class="code" onclick="copyCode('1912973')">Downloader kod: <b>1912973</b></p>
 </div>
 
 <div class="app">
-<img src="images/smarttube.png">
-<h3>Smart Tube</h3>
-<a href="https://www.megadisk.net/cloud11/index.php/s/AMiZnC3UXSJX59g/download" class="btn">Preuzmi aplikaciju</a>
-<p class="code" onclick="copyCode('5143591')">Downloader kod: <b>5143591</b></p>
+  <img src="images/smarttube.png">
+  <h3>Smart Tube</h3>
+  <a href="https://www.megadisk.net/cloud11/index.php/s/AMiZnC3UXSJX59g/download" class="btn">Preuzmi aplikaciju</a>
+  <p class="code" onclick="copyCode('5143591')">Downloader kod: <b>5143591</b></p>
 </div>
 
 <div class="app">
-<img src="images/MOVE.png">
-<h3>MOVE</h3>
-<a href="https://www.megadisk.net/cloud11/index.php/s/3Ky1a5B1u3CJcW0/download" class="btn">Preuzmi aplikaciju</a>
-<p class="code" onclick="copyCode('9419423')">Downloader kod: <b>9419423</b></p>
+  <img src="images/MOVE.png">
+  <h3>MOVE</h3>
+  <a href="https://www.megadisk.net/cloud11/index.php/s/3Ky1a5B1u3CJcW0/download" class="btn">Preuzmi aplikaciju</a>
+  <p class="code" onclick="copyCode('9419423')">Downloader kod: <b>9419423</b></p>
 </div>
 
 <div class="app">
-<img src="images/EON TV.png">
-<h3>EON TV</h3>
-<a href="https://www.megadisk.net/cloud11/index.php/s/D9eMOb6yDvhzB9V/download" class="btn">Preuzmi aplikaciju</a>
-<p class="code" onclick="copyCode('9154449')">Downloader kod: <b>9154449</b></p>
+  <img src="images/EON TV.png">
+  <h3>EON TV</h3>
+  <a href="https://www.megadisk.net/cloud11/index.php/s/D9eMOb6yDvhzB9V/download" class="btn">Preuzmi aplikaciju</a>
+  <p class="code" onclick="copyCode('9154449')">Downloader kod: <b>9154449</b></p>
 </div>
 
-<!-- OSTATAK APLIKACIJA OSTAVLJEN NEPROMENJEN -->
+</div>
 
 <script>
 function copyCode(code) {
-  navigator.clipboard.writeText(code).then(() => {
-    alert("Kod je kopiran: " + code);
-  }).catch(err => {
-    alert("Ne mogu da kopiram kod");
-  });
+  navigator.clipboard.writeText(code)
+    .then(() => alert("Kod je kopiran: " + code))
+    .catch(() => alert("Ne mogu da kopiram kod"));
 }
 </script>
 
